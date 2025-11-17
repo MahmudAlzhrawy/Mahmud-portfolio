@@ -17,6 +17,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Mahmud Alzhrawy Portfolio",
   description: "personal wepsite ",
+
+  openGraph:{
+    images:"/assets/images/personal_avatar.png"
+  }
 };
 
 export default function RootLayout({
