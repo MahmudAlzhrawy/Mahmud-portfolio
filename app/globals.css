@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #e5e5e5;
+
+  --primary: #3b82f6;     /* الأزرق الداكن */
+  --secondary: #a855f7;   /* بنفسجي داكن */
+  --btn-color: #1e40af;   /* زر أزرق داكن */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-btn: var(--btn-color);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@layer base {
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: var(--foreground);
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl mb-6 font-bold text-center;
+  }
+
+  p {
+    @apply text-lg md:text-xl mb-4 text-center;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  li {
+    @apply hover:brightness-125 transition duration-300;
+  }
+}
+
+/* 🔵 زر أساسي */
+@layer components {
+  .btn {
+    background: var(--btn-color);
+    color: white;
+    @apply inline-flex items-center gap-2 px-6 py-3 bg-primary text-foreground font-semibold rounded-2xl hover:bg-primary/90 transition-all shadow-lg;
+  }
+}
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
