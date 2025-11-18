@@ -36,7 +36,7 @@ export default function HeroSection() {
         <h1 className="text-4xl md:text-5xl font-bold text-primary">
           Bring Your Ideas to Life with a Passionate Frontend Developer
         </h1>
-        <p className="text-secondary text-lg md:text-xl leading-relaxed">
+        <p className="text-white text-lg md:text-xl leading-relaxed">
           I specialize in creating beautiful, responsive, and high-performance web applications using modern technologies like <span className="text-accent font-semibold">React</span>, <span className="text-accent font-semibold">Next.js</span>, and <span className="text-accent font-semibold">Tailwind CSS</span>.  
           With a keen eye for detail and a passion for design, I ensure every project I work on is not only functional but also visually engaging.  
           Let's collaborate and transform your vision into a digital reality that stands out!
