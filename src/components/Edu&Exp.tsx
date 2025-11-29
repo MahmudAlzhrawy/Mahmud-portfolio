@@ -102,7 +102,7 @@ export default function EducationExperience() {
       {/* Download CV Button */}
       <div className="mt-12 text-center">
         <a
-          href="/Mahmud_Nagy.pdf" // ضع هنا مسار ملف الـ CV في public folder
+          href="/Mahmud-Nagi.pdf" // ضع هنا مسار ملف الـ CV في public folder
           download
           className="btn"
         >
